@@ -1,0 +1,36 @@
+.cart-item-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cart-item-image-name {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+}
+
+.cart-item-image-name img {
+  display: none;
+}
+
+.cart-item-image-name h4 {
+  margin-left: 10px;
+}
+
+.price {
+  width: 90px;
+  padding-left: 5px;
+  text-align: right;
+}
+
+@media (min-width: 480px) {
+  .cart-item-image-name img {
+    display: block;
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+    border-radius: var(--border-radius);
+  }
+}

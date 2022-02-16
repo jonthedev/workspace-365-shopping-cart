@@ -1,0 +1,109 @@
+/*
+===============
+Variables
+===============
+*/
+
+:root {
+  --mobile-font-size: 14px;
+  --primary-white: #fff;
+  --primary-blue: #3b62aa;
+  --primary-grey: #a8a7a7;
+  --primary-dark-grey: #747272;
+
+  --secondary-blue: #6185c8;
+  --secondary-grey: #d3cece;
+
+  --error: #ac2525;
+  --success: #44951e;
+  --border-radius: 4px;
+}
+
+/*
+===============
+Global Styles
+===============
+*/
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+#app-host {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* remove up down arrows on input */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.btn {
+  width: 90px;
+  height: 40px;
+  margin-left: 10px;
+  border: none;
+  font-size: var(--mobile-font-size);
+  border-radius: var(--border-radius);
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.gold-coin::after {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: goldenrod;
+  border-radius: 50%;
+  position: absolute;
+  transform: translateX(2px);
+}
+
+@media (min-width: 480px) {
+  .btn {
+    width: 100px;
+  }
+
+  .gold-coin::after {
+    width: 10px;
+    height: 10px;
+  }
+}

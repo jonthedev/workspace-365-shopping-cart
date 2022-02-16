@@ -1,0 +1,13 @@
+.stock-availability {
+  display: none;
+  position: absolute;
+  /* transform: translateY(30px); */
+  /* translate: translateX(5px); */
+  background: #fff;
+}
+
+@media (min-width: 480px) {
+  .stock-availability {
+    display: block;
+  }
+}

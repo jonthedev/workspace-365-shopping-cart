@@ -1,0 +1,24 @@
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+}
+
+.modal-buttons .btn-cancel {
+  background: var(--primary-grey);
+  color: var(--primary-dark-grey);
+}
+
+.modal-buttons .btn-cancel:hover {
+  color: var(--primary-white);
+  background: var(--error);
+}
+
+.modal-buttons .btn-buy {
+  background: var(--primary-blue);
+  color: var(--primary-white);
+}
+
+.modal-buttons .btn-buy:hover {
+  background: var(--success);
+}

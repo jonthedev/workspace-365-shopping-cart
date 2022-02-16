@@ -1,0 +1,9 @@
+.cart-container {
+  height: 100%;
+  font-size: var(--mobile-font-size);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
